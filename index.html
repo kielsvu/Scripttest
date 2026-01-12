@@ -37,16 +37,16 @@ body {
 .header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 25px;
+    gap: 14px;
+    margin-bottom: 28px;
 }
 
 .header img {
-    width: 52px;
-    height: 52px;
+    width: 54px;
+    height: 54px;
     border-radius: 14px;
     object-fit: cover;
-    box-shadow: 0 0 18px rgba(244,63,94,0.4);
+    box-shadow: 0 0 20px rgba(244,63,94,0.45);
 }
 
 .header h1 {
@@ -62,12 +62,12 @@ body {
 
 /* SECTION */
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .section h2 {
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 1.2px;
     color: var(--green);
     margin-bottom: 14px;
 }
@@ -80,10 +80,10 @@ body {
     margin-bottom: 14px;
     box-shadow:
         inset 0 0 0 1px rgba(255,255,255,0.04),
-        0 10px 30px rgba(0,0,0,0.7);
+        0 12px 30px rgba(0,0,0,0.75);
 }
 
-/* EXECUTOR */
+/* EXECUTOR CARD */
 .exec {
     display: flex;
     align-items: center;
@@ -91,10 +91,11 @@ body {
 }
 
 .exec img {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     border-radius: 12px;
     object-fit: cover;
+    background: #000;
 }
 
 .exec-info {
@@ -107,7 +108,7 @@ body {
 }
 
 .exec-info p {
-    margin: 3px 0 0;
+    margin: 4px 0 0;
     font-size: 13px;
     color: #9ca3af;
 }
@@ -115,34 +116,36 @@ body {
 .exec a {
     text-decoration: none;
     font-size: 13px;
-    padding: 8px 14px;
-    border-radius: 10px;
+    padding: 9px 16px;
+    border-radius: 12px;
     background: linear-gradient(135deg, var(--accent), #fb7185);
     color: white;
     font-weight: 600;
+    box-shadow: 0 6px 18px rgba(244,63,94,0.4);
 }
 
-/* SCRIPT */
+/* SCRIPT CARD */
 .script h3 {
     margin: 0;
     font-size: 16px;
     color: var(--blue);
 }
 
+.script p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
 .script pre {
     background: #0b0b0b;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 14px;
     font-size: 12px;
     margin-top: 10px;
     overflow-x: auto;
     color: #e5e7eb;
-}
-
-.script p {
-    font-size: 13px;
-    color: #9ca3af;
-    margin-top: 6px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 }
 </style>
 </head>
@@ -152,10 +155,10 @@ body {
 
 <!-- HEADER -->
 <div class="header">
-    <img src="https://raw.githubusercontent.com/kielsvu/Utility/Lua/Icons/IMG_20260101_195045.jpg">
+    <img src="https://raw.githubusercontent.com/kielsvu/Utility/main/Lua/Icons/IMG_20260101_195045.jpg">
     <div>
         <h1>TrustKiel Script Hub</h1>
-        <span>Premium Roblox Executors & Scripts</span>
+        <span>Premium Executors & Roblox Scripts</span>
     </div>
 </div>
 
@@ -164,16 +167,16 @@ body {
 <h2>EXECUTORS</h2>
 
 <div class="card exec">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Delta_logo.png">
+    <img src="https://raw.githubusercontent.com/kielsvu/Utility/main/Executors/delta.png">
     <div class="exec-info">
         <h3>Delta Executor</h3>
-        <p>Fast, stable mobile executor</p>
+        <p>Stable & fast mobile executor</p>
     </div>
     <a href="https://deltaexploits.gg" target="_blank">Download</a>
 </div>
 
 <div class="card exec">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Krnl_logo.png">
+    <img src="https://raw.githubusercontent.com/kielsvu/Utility/main/Executors/krnl.png">
     <div class="exec-info">
         <h3>KRNL</h3>
         <p>Powerful Windows executor</p>
@@ -189,8 +192,8 @@ body {
 
 <div class="card script">
     <h3>Blox Fruits Auto Farm</h3>
-    <p>Auto level, auto quest, boss farm</p>
-    <pre>loadstring(game:HttpGet("https://example.com/script.lua"))()</pre>
+    <p>Auto quest, auto level, boss farming</p>
+    <pre>loadstring(game:HttpGet("https://example.com/bloxfruits.lua"))()</pre>
 </div>
 
 <div class="card script">
